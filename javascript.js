@@ -1,5 +1,8 @@
 const FullImgBox = document.getElementById("fullimgbox");
 const fullimg = document.getElementById("fullimg");
+const prevBtn = document.getElementById('anterior-imagen');
+const nextBtn = document.getElementById('siguiente-imagen');
+const currentImageIndexText = document.getElementById('current-image-index');
 
 const images = [
     'https://picsum.photos/300?random=1',
@@ -26,6 +29,9 @@ const images = [
 
 let currentIndex = 0;
 
+prevBtn.addEventListener('click', showPrevImage);
+nextBtn.addEventListener('click', showNextImage);
+
 function showPrevImage() {
   currentIndex = (currentIndex - 1 + images.length) % images.length;
   fullimg.src = images[currentIndex];
@@ -45,14 +51,6 @@ function openfullimg(reference){
 function closeimg(){
     FullImgBox.style.display = "none";
 }
-
-const prevBtn = document.getElementById('anterior-imagen');
-const nextBtn = document.getElementById('siguiente-imagen');
-
-prevBtn.addEventListener('click', showPrevImage);
-nextBtn.addEventListener('click', showNextImage);
-
-const currentImageIndexText = document.getElementById('current-image-index');
 
 function updateCurrentImageIndexText() {
   currentImageIndexText.innerText = `Imagen ${currentIndex + 1} de ${images.length}`;
