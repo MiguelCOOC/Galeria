@@ -14,7 +14,7 @@ img{
 .galeria{
     display: flex;
     padding: 5px;
-    flex-wrap: column wrap;
+    flex-wrap: wrap;
     margin: auto;
 }
 
