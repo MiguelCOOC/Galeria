@@ -2,26 +2,26 @@ const FullImgBox = document.getElementById("fullimgbox");
 const fullimg = document.getElementById("fullimg");
 
 const images = [
-    'https://picsum.photos/id/1/800/600',
-    'https://picsum.photos/id/2/800/600',
-    'https://picsum.photos/id/3/800/600',
-    'https://picsum.photos/id/4/800/600',
-    'https://picsum.photos/id/5/800/600',
-    'https://picsum.photos/id/6/800/600',
-    'https://picsum.photos/id/7/800/600',
-    'https://picsum.photos/id/8/800/600',
-    'https://picsum.photos/id/9/800/600',
-    'https://picsum.photos/id/10/800/600',
-    'https://picsum.photos/id/11/800/600',
-    'https://picsum.photos/id/12/800/600',
-    'https://picsum.photos/id/13/800/600',
-    'https://picsum.photos/id/14/800/600',
-    'https://picsum.photos/id/15/800/600',
-    'https://picsum.photos/id/16/800/600',
-    'https://picsum.photos/id/17/800/600',
-    'https://picsum.photos/id/18/800/600',
-    'https://picsum.photos/id/19/800/600',
-    'https://picsum.photos/id/20/800/600',
+    'https://picsum.photos/300?random=1',
+    'https://picsum.photos/300?random=2',
+    'https://picsum.photos/300?random=3',
+    'https://picsum.photos/300?random=4',
+    'https://picsum.photos/300?random=5',
+    'https://picsum.photos/300?random=6',
+    'https://picsum.photos/300?random=7',
+    'https://picsum.photos/300?random=8',
+    'https://picsum.photos/300?random=9',
+    'https://picsum.photos/300?random=10',
+    'https://picsum.photos/300?random=11',
+    'https://picsum.photos/300?random=12',
+    'https://picsum.photos/300?random=13',
+    'https://picsum.photos/300?random=14',
+    'https://picsum.photos/300?random=15',
+    'https://picsum.photos/300?random=16',
+    'https://picsum.photos/300?random=17',
+    'https://picsum.photos/300?random=18',
+    'https://picsum.photos/300?random=19',
+    'https://picsum.photos/300?random=20',
 ];
 
 let currentIndex = 0;
@@ -46,8 +46,8 @@ function closeimg(){
     FullImgBox.style.display = "none";
 }
 
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
+const prevBtn = document.getElementById('anterior-imagen');
+const nextBtn = document.getElementById('siguiente-imagen');
 
 prevBtn.addEventListener('click', showPrevImage);
 nextBtn.addEventListener('click', showNextImage);

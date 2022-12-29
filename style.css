@@ -7,7 +7,7 @@ body{
     padding: 0;
 }
 
-galeria-imagen img{
+galeria img{
     width: 100%;
 }
 
@@ -15,6 +15,7 @@ galeria-imagen img{
     display: flex;
     padding: 5px;
     flex-wrap: wrap;
+    margin: auto;
 }
 
 .columnas{
