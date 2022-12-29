@@ -60,6 +60,40 @@ img{
     cursor: pointer;
 }
 
+#anterior-imagen{
+    background-color: transparent;
+    position: absolute;
+    width: 50px;
+    height: 55px;
+    background-repeat: no-repeat; 
+    background-image: url(flechas/izq.png);
+    background-position: 0px 0px;
+    z-index: 3;
+    cursor: pointer;
+    background-size: cover;
+    border: none;
+    margin: 0px;
+    left: 10px;
+    top: 291px;
+}
+
+#siguiente-imagen{
+    background-color: transparent;
+    position: absolute;
+    width: 50px;
+    height: 55px;
+    background-repeat: no-repeat; 
+    background-image: url(flechas/der.png);
+    background-position: 0px 0px;
+    z-index: 3;
+    cursor: pointer;
+    background-size: cover;
+    border: none;
+    margin: 0px;
+    left: 1250px;
+    top: 291px;
+}
+
 @media (max-width:800px){
     .columnas{
         flex: 50%;
